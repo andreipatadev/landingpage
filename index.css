@@ -9,8 +9,24 @@ header {
   align-items: center;
   padding: 2rem 15rem;
   flex-wrap: wrap;
-  background-color: black;
   color: white;
+  animation: header 20s linear;
+  animation-iteration-count: infinite;
+}
+@keyframes header {
+  100%,
+  0% {
+    background-color: #0c4c70;
+  }
+  25% {
+    background-color: #041941;
+  }
+  50% {
+    background-color: #0e346d;
+  }
+  75% {
+    background-color: #051435;
+  }
 }
 nav ul {
   display: flex;
@@ -25,4 +41,57 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: rgb(198, 208, 255);
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+  position: relative;
+  overflow: hidden;
+
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 89, 148, 0.63),
+    rgba(37, 4, 114, 0.486)
+  );
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+.video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+}
+.hero img {
+  max-width: 35%;
+  margin-right: 15rem;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 1rem;
+}
+.hero-content {
+  display: flex;
+  margin-left: 15rem;
+  gap: 1rem;
+  padding-right: 4rem;
+  flex-direction: column;
+}
+.hero-content h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero-content button {
+  width: 9rem;
+  height: 3rem;
+  color: rgb(5, 66, 158);
+  border-radius: 1rem;
+  border-color: rgba(0, 0, 0, 0);
+  font-size: 1rem;
+}
+.hero-content button:hover {
+  background-color: rgba(233, 245, 255, 0.459);
+  color: white;
 }
