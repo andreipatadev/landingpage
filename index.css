@@ -133,6 +133,10 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
 }
+.card-content img:hover {
+  transform: scale(1.3);
+  transition: 2s;
+}
 .card p {
   width: 10rem;
   text-align: center;
