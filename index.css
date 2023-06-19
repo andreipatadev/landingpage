@@ -236,3 +236,69 @@ footer {
     background-color: #051435;
   }
 }
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    max-width: 100%;
+  }
+  header {
+    padding: 2rem;
+    flex: 1;
+    gap: 1rem;
+  }
+  .hero {
+    height: 70rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 0;
+  }
+  .hero-content {
+    padding: 6rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .video-bg {
+    display: none;
+  }
+  .hero img {
+    max-width: 80%;
+    margin-right: 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 1rem;
+    align-items: center;
+  }
+  .cards {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 1rem;
+    width: 100%;
+  }
+  .info-section {
+    padding: 8rem;
+  }
+  .quote {
+    height: auto;
+    padding: 1rem;
+  }
+  .quote em {
+    padding: 2rem;
+    margin: 0;
+  }
+  .cta-content {
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  .quote h3 {
+    text-align: center;
+    margin: 0;
+  }
+  .info-section h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
